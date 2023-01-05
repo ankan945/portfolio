@@ -527,7 +527,7 @@ animation: slider 21s infinite linear;
 padding: 50px 35px;
 }
 .achieve-list{
-display: block;
+display: grid;
 grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
 grid-gap: 40px;
 margin-top: 50px;
