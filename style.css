@@ -1,0 +1,512 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+#header{
+width: 100%;
+}
+.container{
+background-color: white;
+padding: 0px 0%;
+}
+nav{
+display: flex;
+position: relative;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+width:100%;
+height:20%;
+background-image:url(4440058-hd-wallpapers.jpg);
+}
+.logo{
+color:#fff;
+font-family:monotype corsiva;
+font-size:60px;
+font-weight:600;
+float: left;
+padding:30px;
+display:flex;
+justify-content:center;
+margin-left: 15px;
+
+}
+ nav ul li{
+list-style: none;      /*unordered list guli k ak line a display korar jonno*/
+display: inline-block;     /*atar dara list item guli pasapasi ase*/
+margin: 0px 20px;
+margin-right: 75px;                         /* margin likhe: top theke distance...oi item gulir modhhe distance */                    
+}
+ nav ul li a{
+color: #ffffff;
+font-size: 20px;
+font-weight: 500;
+margin-left: 15px;
+     
+transition: color 0.3s ease;
+}
+ nav ul li a:hover{
+color: crimson;
+}
+.home{
+display: block;
+padding-top: 15%;
+padding-left: 25%;
+padding-right: 20%;
+}
+.home-content-col-1{
+flex-basis: 50%;
+}
+.image-col-2{
+flex-basis: 50%;
+}
+.image-col-2 img{
+width: 85%;
+box-shadow: 1px 2px 10px 10px black;
+height: 95%;
+margin-right: 20px;
+border-radius: 25px;
+}
+
+.home .row .home-content-col-1 .t1{
+margin-left: 0px;
+font-size: 27px;
+color: black;
+font-family:monotype corsiva;
+}
+
+.home .row .home-content-col-1 .t2{
+font-size: 75px;
+margin-left: 0px;
+color: black;
+font-family:monotype corsiva;
+}
+.home .row .home-content-col-1 .t3{
+font-size: 27px;
+margin-left: 0px;
+margin: 5px 0;
+color: black;
+font-family:monotype corsiva;
+}
+
+span{
+color: orange;
+}
+.home .row .home-content-col-1 .cv a{
+background: black;
+padding: 17px 17px;
+margin-left: 80px;
+text-decoration:none;
+font-weight: bold;
+color: white;
+display: inline-block;
+margin: 10px 0;
+border-radius: 50px;
+}
+
+
+/* -------about------- */
+.about{
+position: relative;
+padding: 150px 0%;
+margin-top: 165px;
+
+background-color: black;
+}
+
+.row{
+color: #ababab;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.about-col-1{
+flex-basis: 35%;
+}
+.about-col-1 img{
+margin-left: 80px;
+margin-top: 0px;
+width: 75%;
+border-radius: 25px;
+}
+.about-col-2{
+flex-basis: 60%;
+}
+.sub-title{
+margin-top: 105px;
+font-size: 45px;
+font-weight: bold;
+color: pink;
+}
+.my{
+font-size: 20px;
+color: white;
+}
+.tab-titles{
+display: flex;
+margin: 5px 5px;
+}
+
+.tab-links{
+color: white;
+margin: 20px 90px;
+ font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+position: relative;
+}
+
+ /*--------contact--------*/
+.contact-left{
+flex-basis: 35%;
+margin-left: 35px;
+}
+
+.contact-right{
+flex-basis: 60%;
+}
+
+.sub-title{
+margin-top: 0px;
+color: #ff004f;
+}
+
+.contact-left p{
+color: black;
+margin-top: 30px;
+}
+
+.contact-left p i{
+color: #33CC66;
+margin-right: 15px;
+font-size: 25px;
+}
+
+.icons{
+margin-top: 30px;
+}
+.icons a{
+text-decoration: none;
+font-size: 18px;
+margin-right: 15px;
+margin-top: 140px;
+display: inline-block;
+transform: transform 0.5s;
+}
+
+.icons a:hover{
+color: #33CC66;
+transform: translatey(-5px);
+}
+
+.btn{
+display: inline-block;
+background: #33CC66;
+padding: 10px 15px;
+text-decoration:none;
+font-weight: bold;
+color: black;
+margin: 10px 0;
+cursor: ponter;
+border-radius: 50px;
+}
+
+.contact-right form{
+width: 100%;
+margin-top: 80px;
+}
+form input, form textarea{
+width: 100%;
+border: 5px;
+outline: none;
+background: #262626;
+padding: 15px;
+margin: 15px 0;
+color: #fff;
+font-size: 18px;
+border-radius: 6px;
+}
+.copy{
+width: 100%;
+text-align: center;
+padding: 25px 0;
+background: #262626;
+color: #fff;
+font-weight: 300;
+margin-top: 20px;
+}
+
+/*-----------skills-----------*/
+#skill{
+padding: 50px 35px;            //30px from top & bpttpm and 0px from left and rty
+}
+.skills-list{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+
+}
+
+.skills-list div{
+background: #262626;
+color: white;
+padding: 40px;
+font-size: 17px;
+font-weight: 300;
+border-right: 10px;
+border-radius: 30px;
+transition: background 0.5s, transform 0.5s;
+}
+.skills-list div i{
+font-size: 55px;
+margin-bottom: 50px;
+
+}
+
+.skills-list div h2{
+margin-bottom: 15px;
+
+}
+.skills-list div:hover{
+background: #ff004f;
+transform: translatey(-10px);
+}
+/*--------achievements------*/
+#achieve{
+padding: 50px 35px;
+}
+.achieve-list{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+grid-gap: 40px;
+margin-top: 50px;
+}
+.ac{
+border-radius: 10px;
+position: relative;
+overflow: hidden;
+}
+.ac img{
+width: 100%;
+height: 90%;
+border-radius: 20px;
+display: block;
+transition: transform 0.5s;
+}
+.layer{
+color: white;
+width: 100%;
+height: 0%;
+background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+border-radius: 20px;
+position: absolute;
+left: 0;
+bottom: 0;
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;        
+flex-direction: column;
+padding: 0 40px;
+text-align: center;
+transition: height 0.5s;
+}
+
+.a{
+margin-top: 10px;
+font-size: 14px;
+}
+
+.ac:hover img{
+transform: scale(1.1)
+}
+.ac:hover .layer{
+height: 100%;
+}
+/*-------memory----*/
+.memory{
+width: 100%;
+height: 100%;
+background: #222;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.swiper{
+width: 40%;
+height: 95%;
+background-image: url(pic1.jpg);
+background-size: 100% 100%;
+box-shadow: 1px 2px 10px 10px white;
+animation: slider 21s infinite linear;
+}
+ @keyframes slider{
+0%{ background-image: url(pic1.jpg);}
+
+14%{background-image: url(pic2.jpg);}
+
+28%{background-image: url(pic3.jpg);}
+
+42%{background-image: url(pic4.jpg);}
+
+56%{background-image: url(pic5.jpg);}
+
+70%{background-image: url(pic6.jpg);}
+
+84%{background-image: url(pic7.jpg);}
+
+}
+.swiper-slide img{
+width: 100%;
+
+}
+/*------------projects-------*/
+.proj{
+width: 100%;
+height: 60%;
+background: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.port{
+padding: 10px;
+width: 350px;
+height: 350px;
+}
+/*-----------css for small screen------------*/
+
+ nav .fas{ 
+display: none;
+}
+
+@media only screen and (max-width: 600px){
+
+ nav .fas{ 
+display: block;
+font-size: 25px;
+color: white;
+margin-right: 8px;
+margin-bottom: 14px;
+}
+
+nav ul{
+background-image:url(4440058-hd-wallpapers.jpg);
+
+position: fixed;
+top: 0;
+right: -200px;
+width: 200px;
+height: 100vh;
+padding-top: 50px;
+z-index: 2;
+transition: right 0.5s;
+}
+nav ul li{
+display: block;
+margin: 25px;
+}
+nav ul .fas{
+position: absolute;
+top: 25px;
+left: 25px;
+cursor: pointer;
+}
+.home .row .home-content-col-1 .t1{
+margin-left: 0px;
+font-size: 17px;
+color: black;
+font-family:monotype corsiva;
+}
+
+.home .row .home-content-col-1 .t2{
+font-size: 47px;
+margin-left: 0px;
+color: black;
+font-family:monotype corsiva;
+}
+.home .row .home-content-col-1 .t3{
+font-size: 17px;
+margin-left: 0px;
+margin: 5px 0;
+color: black;
+font-family:monotype corsiva;
+}
+nav{
+display: flex;
+position: relative;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+width:100%;
+height:30%;
+background-image:url(4440058-hd-wallpapers.jpg);
+}
+.home .row .home-content-col-1 .cv a{
+background: black;
+padding: 9px 9px;
+margin-left: 80px;
+text-decoration:none;
+font-weight: bold;
+font-size: 10px;
+color: white;
+display: inline-block;
+margin: 10px 0;
+border-radius: 30px;
+}
+.image-col-2 img{
+width: 85%;
+box-shadow: 1px 2px 10px 10px black;
+height: 75%;
+margin-right: 20px;
+border-radius: 25px;
+}
+.sub-title{
+font-size: 40px;
+}
+.about-col-1, .about-col-2{
+flex-basis: 100%;
+
+}
+.about-col-1{
+margin-bottom: 30px;
+}
+.my{
+font-size: 14px;
+}
+.tab-links{
+color: white;
+margin: 10px 42px;
+ font-size: 12px;
+font-weight: bold;
+cursor: pointer;
+position: relative;
+}
+.contact-left, .contact-right{
+flex-basis: 100%;
+}
+.icons a{
+text-decoration: none;
+font-size: 16px;
+margin-right: 7px;
+margin-top: 50px;
+display: inline-block;
+transform: transform 0.5s;
+}
+.copy{
+font-size: 14px;
+}
+.port{
+padding: 10px;
+width: 200px;
+height: 200px;
+}
+}
+#msg{
+color: #61b752;
+margin-top: -10px;
+display: block; 
+}
